@@ -1,5 +1,8 @@
 class Solution:
     def swimInWater(self, grid):
+        from functools import lru_cache
+
+        @lru_cache(None)
         def dfs(row, col, steps):
             n = len(grid)
             if row == n - 1 and col == n - 1:
