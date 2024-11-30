@@ -1,17 +1,23 @@
 class Solution:
     def swimInWater(self, grid):
-        from functools import lru_cache
+        from collections import deque
 
-        @lru_cache(None)
-        def dfs(row, col, steps):
-            n = len(grid)
-            if row == n - 1 and col == n - 1:
+        n = len(grid)
+        dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
+        seen = set()
+        queue = deque([(0, 0, grid[0][0])])
+
+        while queue:
+            row, col, steps = queue.popleft()
+            if (row, col) in seen:
+                continue
+            seen.add((row, col))
+            if row == col == n - 1:
                 return steps
-            if row < 0 or row >= n or col < 0 or col >= n:
-                return float('inf')
-            return min(
-                dfs(row + 1, col, max(steps, grid[row][col])),
-                dfs(row, col + 1, max(steps, grid[row][col]))
-            )
+            for dx, dy in dirs:
+                x, y = row + dx, col + dy
+                if 0 <= x < n and 0 <= y < n:
+                    queue.append((x, y, max(steps, grid[x][y])))
 
-        return dfs(0, 0, grid[0][0])
+        return -1
+
