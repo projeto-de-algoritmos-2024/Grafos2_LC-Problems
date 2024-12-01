@@ -5,7 +5,7 @@ class Solution:
         n = len(points)
         visited = set()
         total_cost = 0
-        min_heap = [(0, 0)]  # (custo, ponto)
+        min_heap = [(0, 0)]  # (custo, ponto inicial)
 
         while len(visited) < n:
             cost, u = heapq.heappop(min_heap)
@@ -20,3 +20,4 @@ class Solution:
                     heapq.heappush(min_heap, (dist, v))
 
         return total_cost
+
