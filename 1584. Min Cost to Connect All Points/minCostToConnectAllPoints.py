@@ -3,9 +3,9 @@ import heapq
 class Solution:
     def minCostConnectPoints(self, points):
         n = len(points)
+        min_heap = [(0, 0)]  # (custo inicial, ponto inicial)
         visited = set()
         total_cost = 0
-        min_heap = [(0, 0)]  # (custo, ponto inicial)
 
         while len(visited) < n:
             cost, u = heapq.heappop(min_heap)
@@ -21,3 +21,7 @@ class Solution:
 
         return total_cost
 
+# Teste do problema
+points = [[0, 0], [2, 2], [3, 10], [5, 2], [7, 0]]
+solution = Solution()
+print(solution.minCostConnectPoints(points))  # Saída esperada: 20
