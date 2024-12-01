@@ -34,3 +34,18 @@ class Solution:
                         candidatosQueue.append((v, dist[v]))
 
             return dist
+
+        # Cálculo das distâncias mínimas
+        dist1 = dijkstra(n, adj, src1)
+        dist2 = dijkstra(n, adj, src2)
+        dist_dest = dijkstra(n, rev_adj, dest)
+
+        # Cálculo do peso mínimo total
+        min_total_cost = float('inf')
+        for v in range(n):
+            if dist1[v] == float('inf') or dist2[v] == float('inf') or dist_dest[v] == float('inf'):
+                continue
+            total_cost = dist1[v] + dist2[v] + dist_dest[v]
+            min_total_cost = min(min_total_cost, total_cost)
+
+        return min_total_cost if min_total_cost != float('inf') else -1
