@@ -27,10 +27,10 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.
 ![](https://github.com/projeto-de-algoritmos-2024/Grafos2_LC-Problems/blob/master/685.%20Redundant%20Connection%20II/685.png)<br>
 
 ### [778. Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/description/)
-![](/778.%20Swim%20in%20Rising%20Water/image.png)<br>
+![](https://github.com/projeto-de-algoritmos-2024/Grafos2_LC-Problems/blob/master/778.%20Swim%20in%20Rising%20Water/image.png)<br>
 
 ### [1584. Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/description/?envType=problem-list-v2&envId=graph)
-![](/1584.%20Min%20Cost%20to%20Connect%20All%20Points/image.png)<br>
+![](https://github.com/projeto-de-algoritmos-2024/Grafos2_LC-Problems/blob/master/1584.%20Min%20Cost%20to%20Connect%20All%20Points/image.png)<br>
 
 ### [2203. Minimum Weighted Subgraph With the Required Paths](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/description/?envType=problem-list-v2&envId=graph)
 ![](https://github.com/projeto-de-algoritmos-2024/Grafos2_LC-Problems/blob/master/2203.%20Minimum%20Weighted%20Subgraph%20With%20the%20Required%20Paths/2203.png)<br>
