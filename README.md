@@ -1,4 +1,4 @@
- # NomedoProjeto
+ # Grafos2 | LC-Problems
 
 **Número da Lista**: 23<br>
 **Conteúdo da Disciplina**: Grafos 2<br>
@@ -10,7 +10,7 @@
 | 211030774  |  Gustavo França Boa Sorte |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Este repositório contém questões resolvidas, aplicando os conhecimentos sobre o conteúdo de Grafos 2 da Disciplina de Projeto de Algoritmos. As questões propostas foram usadas para a conclusão do Trabalho 2 em Dupla.
 
 ## Questões
 | Nome                                                                                                                                      | Nível   |
@@ -37,7 +37,9 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
 **Linguagem**: Python<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+
+- As questões foram desenvolvidas em Python na versão 3+
+- Utilização de IDEs como Visual Studio Code e Sublime para executar os algoritmos localmente, ou entrar na plataforma LeetCode e testar as questões direto por lá.
 
 ## Vídeos explicando cada problema:
 
@@ -46,9 +48,4 @@ Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 1584: [https://www.youtube.com/watch?v=EayPVCbwLl0&feature=youtu.be](https://www.youtube.com/watch?v=EayPVCbwLl0&feature=youtu.be) <br> 
 2203: [https://youtu.be/nZQVytwvGU0?si=7SiTU-D1gJA0I5aW](https://youtu.be/nZQVytwvGU0?si=7SiTU-D1gJA0I5aW)<br>
 
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
-
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
