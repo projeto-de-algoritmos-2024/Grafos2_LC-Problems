@@ -1,3 +1,5 @@
+import heapq
+
 class Solution:
     def minimumWeight(self, n, edges, src1, src2, dest):
 
@@ -11,27 +13,19 @@ class Solution:
         def dijkstra(n, adj, src):
             dist = [float('inf')] * n
             dist[src] = 0
-            candidatosQueue = [(src, 0)]
+            heap = [(src, 0)]
 
-            while candidatosQueue:
-                # Encontrar o nó com a menor distância na lista
-                u, d = None, float('inf')
-                min_idx = -1
-                for idx, (node, distance) in enumerate(candidatosQueue):
-                    if distance < d:
-                        u, d = node, distance
-                        min_idx = idx
+            #utilizando heap para lista dos candidatos
+            while heap:
+                d, u = heapq.heappop(heap)
 
-                candidatosQueue.pop(min_idx)
-
-                # Verificar se a distância atual é maior que a registrada
                 if d > dist[u]:
                     continue
 
                 for v, w in adj[u]:
                     if dist[v] > dist[u] + w:
                         dist[v] = dist[u] + w
-                        candidatosQueue.append((v, dist[v]))
+                        heapq.heappush(heap, (dist[v], v))
 
             return dist
 
